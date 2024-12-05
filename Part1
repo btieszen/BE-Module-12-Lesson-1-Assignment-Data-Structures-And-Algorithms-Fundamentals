@@ -1,0 +1,45 @@
+Case Study: Optimizing Text Messaging App with Efficient Data Structures
+
+
+Task 1: Message Storage and Retrieval:
+
+    ARRAYS:
+        An array is a linear daata structure with same data types. It stores data in a specific orderand with constant time0(1)
+        They are the data structur useed for stacks and ques
+        The allow direct and efficent access and can be used with all data types
+        In the text messging app they can be used to store specific messages for quick retrieval and used to store contact information
+
+    LINKED LIST:
+        Linked List offerd a large amont of storage and efficents data manipulation.  
+        They provide  flexibility in memeory and allows seamless insertion and deletion
+        Linked List would be efficent for message storage
+
+    HASH TABLES:
+        Hash Tags are data structures used to insert, lookup and delete data
+        They would be good to uss in the text messaging app to add new contacts, and new messages, to find a specific meassage or contact.
+        Also used to delete a contact or message
+
+    TREES:
+        Tress are structure used to represent and arrange information by importance
+        Trees can be used in our app to store important contacts and more important messages
+
+
+Task 2: Real-Time Updates:
+
+    POLLING:
+        Polling checks for data over a fixed intervale of time by making API calls
+        It makes request to the server and the server will make a retuen if data is available.
+        If data is not available it will retuen nothing. 
+        This can cause a burden on the server or network or both
+
+    LONG POLLING:
+        Like polling except if data is not available it will wait for the data to become available then make a return
+
+    WEBSOCKETS:
+        WebSockets allow two wat communication between server and user
+        WebSockets are good for correctness,simplicity,performance, and robustness
+
+
+
+
+

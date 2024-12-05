@@ -1,0 +1,38 @@
+Case Study: Analyzing Big O Complexity for a Sorting Algorithm
+
+Task 1: Identifying Key Operations
+
+    In main.py
+    n = the length of the array( how many items of data are in the aray)
+    i is the loop that will loop through every part of the array
+    J is taking a look at the array and getting the second value in the array
+        It doesnt look at the first number because their is nothing to compare the first number to
+        So it look at the second number an compares it to the first. 
+        If it is less then the first number then it puts it in front of the first number.
+        Then it will go to the third number and compare it to the second number.
+        If it is less then the second number it will put it after the second number.
+        Then it will compare it to the first number and if less then will put it in front of the first number.
+        If the number is not less then the number before it it will stop and go back to the first number and do it all over again
+        It will repeat checking every number until it reaches the end of the array
+
+Task 2: Calculating Big O Complexity
+
+    The Big O is O(n)
+        The time it takes to finish the program is determined by the lenght of n(how much data is in the array)
+        It would take much longer if there was 100000 data entries in n compared to 5 data entries
+
+Task 3: Efficiency Analysis:
+
+    Another way is to use a while loop:
+
+def insertion_sort(arr):
+    for i in range(1,len(arr)):
+      key=arr[i]
+        j=i-1
+        while j>= 0 and key<arr[j]:
+            arr[j+1]=arr[j]
+            j-=1
+            arr[j+1]=key
+        return arr
+my_arr=[75,12,34,43,25,67,54,65,30,98]
+print(insertion_sort(my_arr))
